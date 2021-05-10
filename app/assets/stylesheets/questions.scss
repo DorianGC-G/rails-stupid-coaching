@@ -1,0 +1,19 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: #333333;
+  color: white;
+  text-align: center;
+}
+#coach {
+  &:hover {
+    color: #e00505;
+    transition-duration: 1s;
+    transition-property: color;
+  }
+}
+a {
+  color: white;
+}

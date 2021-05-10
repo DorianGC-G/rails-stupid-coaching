@@ -1,0 +1,12 @@
+<h3>You asked:</h3>
+<p><%= @question %></p>
+<h3 id="coach">Your favorite coach answers:</h3>
+<% if @question == "I am going to work" %>
+  <p>Great!</p>
+<% elsif @question.include? "?" %>
+<p>Stupid question! Get dressed and go to work!</p>
+<% else %>
+<p>I don't care! Get dressed and go to work!</p>
+<% end %>
+
+<%= link_to "Ask another question (unless you're bored)", ask_path %>
